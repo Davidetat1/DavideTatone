@@ -16,7 +16,7 @@ const Header = ({ menuOpen, setMenuOpen }) => {
         border-white/10 bg-circular-gradient p-1 backdrop-blur"
         >
           <div className="flex items-center">
-            <a href="/" aria-label="Home">
+            <a href="#hero" aria-label="Home">
               <Logo className="h-12 w-13 my-1" />
             </a>
           </div>
