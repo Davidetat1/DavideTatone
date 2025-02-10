@@ -11,6 +11,7 @@ const Hero = ({ menuOpen }) => {
         autoPlay
         loop
         muted
+        playsInline
         className="absolute top-0 left-0 w-full h-full object-cover z--100"
       >
         <source src={videoBg} type="video/mp4" />
