@@ -1,13 +1,11 @@
-import React from 'react'
-import HeroContent from '../components/HeroContent'
-import HeroImage from '../components/HeroImage'
-import videoBg from '../assets/videos/videoBg.mp4';
+import React from "react";
+import HeroContent from "../components/HeroContent";
+import HeroImage from "../components/HeroImage";
+import videoBg from "../assets/videos/videoBg.mp4";
 
-
-
-const Hero = ({menuOpen}) => {
+const Hero = ({ menuOpen }) => {
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden" id="hero">
       {/* Video Background */}
       <video
         autoPlay
@@ -20,26 +18,26 @@ const Hero = ({menuOpen}) => {
       </video>
 
       {/* Overlay to darken the video */}
-      <div 
-       className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-99">
-      </div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-99"></div>
 
       {/* Container */}
-        <div 
+      <div
         className={`container transition-all duration-300 ${
-            menuOpen ? "px-10 blur-sm" : ""
+          menuOpen ? "px-10 blur-sm" : ""
         }`}
-        >    
-          <div className="relative flex h-screen flex-col-reverse
-          items-center md:flex-row">
-                {/* Hero content */}
-                <HeroContent/>
-                {/* Hero Image */}
-                <HeroImage/>
-            </div>
+      >
+        <div
+          className="relative flex h-screen flex-col-reverse
+          items-center md:flex-row"
+        >
+          {/* Hero content */}
+          <HeroContent />
+          {/* Hero Image */}
+          <HeroImage />
         </div>
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
