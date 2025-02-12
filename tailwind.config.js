@@ -32,6 +32,9 @@ export default {
         22: "5.5rem",
         24: "6rem",
       },
+      screens: {
+        xxs: { "max:": "375px" },
+      },
     },
   },
   plugins: [],

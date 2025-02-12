@@ -11,7 +11,7 @@ Oggi porto con me questa mentalità in ogni progetto su cui lavoro, con l'obiett
 
 const About = () => {
   return (
-    <section className="bg-white/10 py-10" id="about">
+    <section className="py-10" id="about">
       <SectionTitle title="Su di me" />
       <div className="container mx-auto mt-8 flex flex-col md:flex-row items-center gap-10">
         {/* About Image Column */}
