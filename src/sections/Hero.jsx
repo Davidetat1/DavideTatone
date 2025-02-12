@@ -1,7 +1,7 @@
 import React from "react";
 import HeroContent from "../components/HeroContent";
 import HeroImage from "../components/HeroImage";
-import videoBg from "../assets/videos/videoBg.mp4";
+import videoBg from "../assets/videos/VideoBg.mp4";
 import ShapeDividerHero from "../components/shape/shapeBottom/ShapeBottom";
 
 const Hero = ({ menuOpen }) => {
