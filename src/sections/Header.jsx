@@ -5,7 +5,6 @@ import { BiMenuAltRight } from "react-icons/bi";
 import { BiX } from "react-icons/bi";
 import MobileMenu from "../components/MobileMenu.jsx";
 import Logo from "../components/Logo.jsx";
-import { Link } from "react-router-dom";
 
 const Header = ({ menuOpen, setMenuOpen }) => {
   return (
