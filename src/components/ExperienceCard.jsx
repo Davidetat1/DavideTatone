@@ -44,7 +44,7 @@ const ExperienceCard = ({ experience, isOpen, onToggle }) => {
       {/* Contenuto espanso unificato */}
       {isOpen && (
         <div
-          className="p-6 bg-gray-700/30 text-gray-300 rounded-lg 
+          className="p-6 bg-white/70 text-black rounded-lg 
         flex flex-col md:flex-row md:items-start gap-4"
         >
           {/* Logo in mobile: in cima; in desktop: a destra */}
@@ -78,7 +78,7 @@ const ExperienceCard = ({ experience, isOpen, onToggle }) => {
                     href={experience.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-purple-400 text-sm hover:underline"
+                    className="flex items-center gap-2 text-purple-600 text-sm hover:underline"
                   >
                     <FaExternalLinkAlt />
                     <span>
@@ -98,8 +98,8 @@ const ExperienceCard = ({ experience, isOpen, onToggle }) => {
                     {experience.skills.map((skill) => (
                       <span
                         key={skill}
-                        className="bg-blue-800/30 text-white/80 
-                        text-sm md:text-xs px-3 py-2 rounded-full"
+                        className="bg-blue-800 text-white/80 
+                        text-sm md:text-xs px-3 py-2 rounded-full shadow-lg"
                       >
                         {skill}
                       </span>

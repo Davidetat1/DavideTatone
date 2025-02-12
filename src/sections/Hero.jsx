@@ -2,10 +2,11 @@ import React from "react";
 import HeroContent from "../components/HeroContent";
 import HeroImage from "../components/HeroImage";
 import videoBg from "../assets/videos/videoBg.mp4";
+import ShapeDividerHero from "../components/shape/shapeBottom/ShapeBottom";
 
 const Hero = ({ menuOpen }) => {
   return (
-    <section className="relative overflow-hidden" id="hero">
+    <section className="relative overflow-hidden pb-24 md:pb-0" id="hero">
       {/* Video Background */}
       <video
         autoPlay
@@ -29,7 +30,7 @@ const Hero = ({ menuOpen }) => {
       >
         <div
           className="relative flex h-screen flex-col-reverse
-          items-center md:flex-row"
+          items-center md:flex-row "
         >
           {/* Hero content */}
           <HeroContent />
@@ -37,6 +38,7 @@ const Hero = ({ menuOpen }) => {
           <HeroImage />
         </div>
       </div>
+      <ShapeDividerHero />
     </section>
   );
 };
