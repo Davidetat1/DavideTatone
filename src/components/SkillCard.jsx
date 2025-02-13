@@ -9,11 +9,15 @@ const SkillCard = ({ skill }) => {
     >
       <skill.icon
         className="rounded-full border-2 border-white/15 bg-white/5 
-        p-2 text-6xl text-blue-600 hover:border-blue-600"
+        p-2 text-6xl text-white/100 hover:border-blue-600"
       />
       <div className="space-y-2">
-        <h3 className="text-2xl font-semibold text-white/90">{skill.title}</h3>
-        <p className="text-white/40">{skill.description}</p>
+        <h3 className="text-2xl font-semibold text-white/90 font-poppins">
+          {skill.title}
+        </h3>
+        <p className="text-white/70 font-poppins font-thin">
+          {skill.description}
+        </p>
       </div>
     </div>
   );

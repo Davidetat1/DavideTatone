@@ -3,7 +3,8 @@ import React from "react";
 const ProjectCard = ({ project, index }) => {
   return (
     <div
-      className="sticky overflow-hidden rounded-2xl border-2 border-white/15 bg-gray-800 p-8 md:flex md:items-center"
+      className="sticky overflow-hidden rounded-2xl border-1 border-white/50
+       bg-zinc-950 p-8 md:flex md:items-center"
       style={{
         top: `calc(100px + ${index * 30}px)`,
       }}
@@ -13,8 +14,8 @@ const ProjectCard = ({ project, index }) => {
         <h2 className="font-poppins text-2xl font-bold text-white/90">
           {project.title}
         </h2>
-        <hr className="border-t-2 border-white/10" />
-        <p className="text-sm text-white/50 whitespace-pre-line">
+        <hr className="border-t-2 border-white/40 w-1/2" />
+        <p className="text-xs md:text-base tracking-wider font-poppins font-light text-white/100 mr-7">
           {project.description}
         </p>
       </div>

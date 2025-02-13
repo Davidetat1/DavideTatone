@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const HeroContent = () => {
   return (
-    <div className="text-left md:max-w-72 lg:max-w-lg z-10">
+    <div className="text-left md:max-w-72 lg:max-w-lg">
       <p className="text-2xl sm:text-3xl font-poppins font-bold text-blue-500">
         Davide Tatone
       </p>

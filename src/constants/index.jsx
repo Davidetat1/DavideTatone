@@ -16,7 +16,7 @@ export const menuItems = [
 export const projects = [
   {
     id: 1,
-    title: "E-Commerce platform: Bikeville ",
+    title: "Web App E-Commerce: Bikeville",
     image: ProjectBikeville,
     description:
       "Web App E-commerce con funzionalità come lista prodotti, carrello, autenticazione e criptazione dati. \nIntegrazione completa con Front-end sviluppato in Angular(v18.2) & Typecript, con attività di Styling personalizzato attraverso CSS \ne Back-end Utilizzando .NET Core, C#,  Entity Framework e SQL server.",
@@ -64,7 +64,7 @@ export const skills = [
 export const experiences = [
   {
     id: 1,
-    title: "Academy Full Stack .NET @Betacom",
+    title: "Academy .NET @Betacom",
     location: "Bari, IT",
     website: "https://www.betacom.it",
     description: `Partecipazione al percorso intensivo di 500 ore dell'Academy Betacom, focalizzato sul ciclo di vita del software e sullo sviluppo full stack.
@@ -75,7 +75,7 @@ C#, .NET Core per il back-end, utilizzando Entity Framework per l'integrazione c
 Implementazione di funzionalità back-end: CRUD, autenticazione con JWT, criptazione dati e integrazione con database relazionale.
 
 Realizzazione della parte front-end con Angular, TypeScript, HTML e CSS, creando un'interfaccia utente intuitiva, moderna e reattiva.`,
-    years: "2024 - 2025",
+    years: "2024-2025",
     skills: [
       "C#",
       ".NET",
@@ -91,7 +91,7 @@ Realizzazione della parte front-end con Angular, TypeScript, HTML e CSS, creando
 
   {
     id: 2,
-    title: "Java Backend Developer @Develhope",
+    title: `Java Back-end @Develhope`,
     location: "Remoto, IT",
     website: "https://www.develhope.co",
     description: `Formazione intensiva di 6 mesi come Java Back-End Developer con Develhope. Selezionato per una borsa di studio nell'ambito del programma Ready For IT+, finanziato dal Fondo per la Repubblica Digitale.
@@ -103,7 +103,7 @@ Gestione di database SQL con MySQL, e Postman per il testing delle API.
 Collaborazione in team tramite GitHub, con progetti pratici di difficoltà crescente.
 
 Progetto finale: sviluppo back-end di un'applicazione di streaming musicale, utilizzando Spring Boot, Spring Data JPA (Hibernate) e MySQL per la gestione dei dati.`,
-    years: "2024 - 2024",
+    years: "2024-2024",
     skills: [
       "Java",
       "SpringBoot",

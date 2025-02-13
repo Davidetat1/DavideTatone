@@ -5,31 +5,31 @@ import ReactMarkdown from "react-markdown";
 const ExperienceCard = ({ experience, isOpen, onToggle }) => {
   return (
     <>
-      {/* Card Viola */}
+      {/* Card */}
       <div className="rounded-lg overflow-hidden">
         <button
           onClick={onToggle}
           className="group w-full flex justify-between items-center 
-          pl-4 pr-2 py-4 md:px-6 md:py-4 text-base lg:text-xs
-          font-poppins font-semibold tracking-wide
+          pl-3 pr-2 py-3 md:px-6 md:py-4 text-base lg:text-xs
+          font-poppins tracking-wide
           bg-gradient-to-l from-blue-600 to-blue-700
           hover:from-blue-900 hover:to-blue-800 rounded-lg"
         >
           {/* Titolo a sinistra */}
-          <span className="text-xs md:text-sm lg:text-lg">
+          <span className="font-semibold text-xs md:text-lg lg:text-xl">
             {experience.title}
           </span>
 
           {/* Container a destra per years e icona "+" */}
-          <div className="flex items-center gap-3 md:gap-6">
+          <div className="flex items-center gap-2 md:gap-6">
             {experience.years && (
-              <span className="text-xs md:text-sm lg:text-lg font-bold">
+              <span className="text-xs md:text-base lg:text-lg font-normal">
                 {experience.years}
               </span>
             )}
             <span
               className="inline-flex items-center justify-center w-6 h-6 
-               text-xs text-gray-300 
+               text-xs md:text-base text-gray-300 
                transition-colors duration-300 
                group-hover:text-cyan-400 
                group-hover:bg-gray-100/10 
@@ -41,7 +41,7 @@ const ExperienceCard = ({ experience, isOpen, onToggle }) => {
         </button>
       </div>
 
-      {/* Contenuto espanso unificato */}
+      {/* Contenuto espanso */}
       {isOpen && (
         <div
           className="p-6 bg-white/70 text-black rounded-lg 
@@ -90,7 +90,7 @@ const ExperienceCard = ({ experience, isOpen, onToggle }) => {
             )}
             {experience.description && (
               <>
-                <div className="font-poppins font-medium text-sm text-left md:text-justify whitespace-pre-wrap prose prose">
+                <div className="font-poppins font-medium text-sm text-left md:text-justify whitespace-pre-wrap">
                   <ReactMarkdown>{experience.description}</ReactMarkdown>
                 </div>
                 {experience.skills && (
@@ -99,7 +99,7 @@ const ExperienceCard = ({ experience, isOpen, onToggle }) => {
                       <span
                         key={skill}
                         className="bg-blue-800 text-white/80 
-                        text-sm md:text-xs px-3 py-2 rounded-full shadow-lg"
+                        text-sm md:text-xs px-3 py-2 rounded-full shadow-lg font-poppins font-extralight"
                       >
                         {skill}
                       </span>
