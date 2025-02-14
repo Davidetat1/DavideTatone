@@ -1,4 +1,5 @@
-import { BiCodeAlt, BiMobileAlt, BiPalette } from "react-icons/bi";
+import { BiCodeAlt, BiLogoReact, BiData } from "react-icons/bi";
+
 import ProjectBikeville from "../assets/images/ProjectBikeVille.png";
 import ProjectPortfolio from "../assets/images/ProjectPortfolio.png";
 import ProjectVibesHub from "../assets/images/ProjectVibesHub.png";
@@ -50,14 +51,14 @@ export const skills = [
     title: "Front-end Development",
     description:
       "Esperienza nello sviluppo di interfacce utente responsive e moderne con: HTML, CSS, Javascipt, Typescript, Angular, React, Tailwind",
-    icon: BiMobileAlt,
+    icon: BiLogoReact,
   },
   {
     id: 3,
     title: "Data Management",
     description:
       "Esperienza nella progettazione e gestione di Database relazionali: SQL Server, MySQL, e di database NoSQL come MongoDB",
-    icon: BiPalette,
+    icon: BiData,
   },
 ];
 
@@ -128,14 +129,14 @@ export const contactDetails = [
   {
     id: 2,
     type: "Phone",
-    value: "+123 456 7890",
-    link: "tel:+1234567890",
+    value: "+39 345 164 3264",
+    link: "cell:+39 345-164-3264",
     icon: "📞",
   },
   {
     id: 3,
     type: "LinkedIn",
-    value: "linkedin.com/in/yourprofile",
+    value: "Davide Tatone",
     link: "https://www.linkedin.com/in/davide-tatone/",
     icon: "🔗",
   },

@@ -1,7 +1,7 @@
 import React from "react";
 import { menuItems } from "../constants/index.jsx";
 import Button from "../components/Button.jsx";
-import { BiMenuAltRight } from "react-icons/bi";
+import { BiMenu } from "react-icons/bi";
 import { BiX } from "react-icons/bi";
 import MobileMenu from "../components/MobileMenu.jsx";
 import Logo from "../components/Logo.jsx";
@@ -39,7 +39,7 @@ const Header = ({ menuOpen, setMenuOpen }) => {
             aria-label="Toggle Menu"
             aria-expanded={menuOpen}
           >
-            {menuOpen ? <BiX /> : <BiMenuAltRight />}
+            {menuOpen ? <BiX /> : <BiMenu />}
           </button>
         </nav>
       </header>

@@ -5,6 +5,8 @@ import Projects from "./sections/Projects.jsx";
 import About from "./sections/About.jsx";
 import Skills from "./sections/Skills.jsx";
 import Experiences from "./sections/Experiences.jsx";
+import Contact from "./sections/Contact.jsx";
+import Footer from "./sections/Footer.jsx";
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState();
@@ -17,6 +19,8 @@ const App = () => {
       <About />
       <Skills />
       <Experiences />
+      <Contact />
+      <Footer />
     </div>
   );
 };
