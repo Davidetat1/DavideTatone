@@ -4,7 +4,7 @@ import HeroPic from "../assets/images/HeroPic.png";
 const HeroImage = () => {
   return (
     <div
-      className="mask-gradient absolute xxs:absolute right-0 top-0 h-[63dvh] w-full
+      className="mask-gradient absolute xxs:absolute right-0 top-0 h-[61svh] w-full
     overflow-hidden rounded-bl-full rounded-br-full border-r-[10px]
     border-blue-500 bg-gray-700 md:h-[60dvh] md:w-[450px]"
     >

@@ -1,4 +1,11 @@
 import { BiCodeAlt, BiLogoReact, BiData } from "react-icons/bi";
+import {
+  FaEnvelope,
+  FaPhoneAlt,
+  FaLinkedin,
+  FaMapPin,
+  FaMapMarkedAlt,
+} from "react-icons/fa";
 
 import ProjectBikeville from "../assets/images/ProjectBikeVille.png";
 import ProjectPortfolio from "../assets/images/ProjectPortfolio.png";
@@ -69,13 +76,9 @@ export const experiences = [
     location: "Bari, IT",
     website: "https://www.betacom.it",
     description: `Partecipazione al percorso intensivo di 500 ore dell'Academy Betacom, focalizzato sul ciclo di vita del software e sullo sviluppo full stack.
-Sviluppo in team di una Web Application completa con:
+Il focus principale è stato quello di presentare le varie fasi del ciclo di vita del software e creare progetti in ambito Net Core/ C#, per il lato Back End e in ambito Angular / React per il lato Front End.
 
-C#, .NET Core per il back-end, utilizzando Entity Framework per l'integrazione con SQL Server.
-
-Implementazione di funzionalità back-end: CRUD, autenticazione con JWT, criptazione dati e integrazione con database relazionale.
-
-Realizzazione della parte front-end con Angular, TypeScript, HTML e CSS, creando un'interfaccia utente intuitiva, moderna e reattiva.`,
+Competenze acquisite:`,
     years: "2024-2025",
     skills: [
       "C#",
@@ -98,12 +101,9 @@ Realizzazione della parte front-end con Angular, TypeScript, HTML e CSS, creando
     description: `Formazione intensiva di 6 mesi come Java Back-End Developer con Develhope. Selezionato per una borsa di studio nell'ambito del programma Ready For IT+, finanziato dal Fondo per la Repubblica Digitale.
 
 Approfondimento di Java, Spring Boot, Spring Data JPA (Hibernate), Design Pattern (Singleton, Factory), architettura MVC e REST API.
-
 Gestione di database SQL con MySQL, e Postman per il testing delle API.
-
 Collaborazione in team tramite GitHub, con progetti pratici di difficoltà crescente.
-
-Progetto finale: sviluppo back-end di un'applicazione di streaming musicale, utilizzando Spring Boot, Spring Data JPA (Hibernate) e MySQL per la gestione dei dati.`,
+Competenze acquisite:`,
     years: "2024-2024",
     skills: [
       "Java",
@@ -124,28 +124,28 @@ export const contactDetails = [
     type: "Email",
     value: "Davidetatone92@gmail.com",
     link: "mailto:Davidetatone92@gmail.com",
-    icon: "📧",
+    icon: FaEnvelope,
   },
   {
     id: 2,
     type: "Phone",
     value: "+39 345 164 3264",
     link: "cell:+39 345-164-3264",
-    icon: "📞",
+    icon: FaPhoneAlt,
   },
   {
     id: 3,
     type: "LinkedIn",
     value: "Davide Tatone",
     link: "https://www.linkedin.com/in/davide-tatone/",
-    icon: "🔗",
+    icon: FaLinkedin,
   },
   {
     id: 4,
     type: "Location",
     value: "Bari, Italia",
     link: null,
-    icon: "📍",
+    icon: FaMapMarkedAlt,
   },
 ];
 
@@ -163,23 +163,3 @@ export const words = [
   "GitHub",
   "VS Code",
 ];
-
-// ::-webkit-scrollbar {
-//     width: 12px;
-//     height: 12px;
-//   }
-
-//   ::-webkit-scrollbar-track {
-//     background: #20242d;
-//   }
-
-//   ::-webkit-scrollbar-thumb {
-//     background: #3b82f6;
-//     border-radius: 6px;
-//     border: 1px solid #eee;
-//     transition: background 0.3s ease;
-//   }
-
-//   ::-webkit-scrollbar-thumb:hover {
-//     background: #555555;
-//   }

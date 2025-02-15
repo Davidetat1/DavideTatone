@@ -90,7 +90,7 @@ const ExperienceCard = ({ experience, isOpen, onToggle }) => {
             )}
             {experience.description && (
               <>
-                <div className="font-poppins font-medium text-sm text-left md:text-justify whitespace-pre-wrap">
+                <div className="font-poppins font-medium text-sm text-left md:text-base md:text-justify whitespace-pre-wrap">
                   <ReactMarkdown>{experience.description}</ReactMarkdown>
                 </div>
                 {experience.skills && (
