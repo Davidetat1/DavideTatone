@@ -29,7 +29,7 @@ const Hero = ({ menuOpen }) => {
         }`}
       >
         <div
-          className="relative flex h-[93dvh] md:h-screen flex-col-reverse
+          className="relative flex h-[93svh] md:h-screen flex-col-reverse
           items-center md:flex-row "
         >
           {/* Hero content */}
