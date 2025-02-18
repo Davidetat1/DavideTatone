@@ -5,7 +5,9 @@ import {
   FaLinkedin,
   FaMapPin,
   FaMapMarkedAlt,
+  FaDatabase,
 } from "react-icons/fa";
+import { DiDatabase } from "react-icons/di";
 
 import ProjectBikeville from "../assets/images/ProjectBikeVille.png";
 import ProjectPortfolio from "../assets/images/ProjectPortfolio.png";
@@ -26,22 +28,25 @@ export const projects = [
     id: 1,
     title: "Web App E-Commerce: Bikeville",
     image: ProjectBikeville,
-    description:
-      "Web App E-commerce con funzionalità come lista prodotti, carrello, autenticazione e criptazione dati. \nIntegrazione completa con Front-end sviluppato in Angular(v18.2) & Typecript, con attività di Styling personalizzato attraverso CSS \ne Back-end Utilizzando .NET Core, C#,  Entity Framework e SQL server.",
+    description: `Web App E-commerce con funzionalità come lista prodotti, carrello, autenticazione e criptazione dati.
+Integrazione completa con Front-end sviluppato in Angular(v18.2) & TypeScript, con attività di Styling personalizzato attraverso CSS 
+e Back-end Utilizzando .NET Core, C#,  Entity Framework e SQL server. `,
   },
   {
     id: 2,
     title: "Responsive Portfolio Website",
     image: ProjectPortfolio,
-    description:
-      "Portfolio personale realizzato con React.js, \nche sfrutta Tailwind CSS per offrire un'interfaccia utente moderna, responsive e performante. Il sito è strutturato in maniera modulare con componenti riutilizzabili, include animazioni fluide e un design curato per evidenziare le varie sezioni in modo dinamico e intuitivo.",
+    description: `Portfolio personale realizzato con React.js, che sfrutta Tailwind CSS per offrire un'interfaccia utente moderna, responsive e performante. 
+Il sito è strutturato in maniera modulare con componenti riutilizzabili, include animazioni fluide e un design curato per evidenziare le varie sezioni in modo dinamico e intuitivo.`,
   },
   {
     id: 3,
     title: "App for streaming music: VibesHub",
     image: ProjectVibesHub,
-    description:
-      "Applicazione di streaming musicale sviluppata\n con Java 21 e Spring Boot 3.2.1. \nConfezionata come jar tramite Maven, \nl'applicazione segue il pattern MVC, \nintegra MySQL tramite Spring Data JPA per la gestione dei dati e utilizza \nMiniO per l'object storage. \nImplementazione di REST API per garantire la gestione delle funzionalità.",
+    description: `Applicazione di streaming musicale sviluppata\n con Java 21 e Spring Boot 3.2.1.
+Confezionata come jar tramite Maven, l'applicazione segue il pattern MVC, 
+integra MySQL tramite Spring Data JPA per la gestione dei dati e utilizza MiniO per l'object storage. 
+Implementazione di REST API per garantire la gestione delle funzionalità.`,
   },
 ];
 
@@ -65,7 +70,7 @@ export const skills = [
     title: "Data Management",
     description:
       "Esperienza nella progettazione e gestione di Database relazionali: SQL Server, MySQL, e di database NoSQL come MongoDB",
-    icon: BiData,
+    icon: DiDatabase,
   },
 ];
 

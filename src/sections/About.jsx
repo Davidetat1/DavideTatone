@@ -1,11 +1,14 @@
 import React from "react";
 import SectionTitle from "../components/SectionTitle";
 import AboutImage from "../assets/images/AboutImage.png";
-import Button from "../components/Button";
+import Button from "../components/Buttons/Button";
+import ContactButton from "../components/Buttons/ContactButton";
 
-const aboutText = `Fin da piccolo ho sempre avuto una curiosità instancabile per la tecnologia. Mi affascinava capire il funzionamento delle cose, Crescendo, quella curiosità mi ha portato a intraprendere un percorso nel mondo dello sviluppo software, dove ho affinato competenze sia nel back-end che nel front-end, lavorando con diverse tecnologie, linguaggi e framework.
+const aboutText = `Fin da piccolo ho sempre avuto una curiosità instancabile per la tecnologia. Mi affascinava capire il funzionamento delle cose.
 
-Ma il codice non è tutto ciò che mi rappresenta. Ho imparato il valore della collaborazione e della determinazione non solo attraverso le righe di programmazione, ma anche attraverso lo sport, la mia prima scuola di vita, tra calcio e palestra, ho affinato costanza e perseveranza, imparando che ogni sfida, sia nel mondo digitale che nella vita reale, è un’opportunità per crescere e migliorare.
+Crescendo, quella curiosità mi ha portato a intraprendere un percorso nel mondo dello sviluppo software, dove ho affinato competenze sia nel back-end che nel front-end, lavorando con diverse tecnologie, linguaggi e framework.
+
+Ma il codice non è tutto ciò che mi rappresenta. Ho imparato il valore della collaborazione e della determinazione non solo attraverso le righe di programmazione, ma anche attraverso lo sport, la mia prima scuola di vita, grazie al quale ho affinato costanza e perseveranza, imparando che ogni sfida, sia nel mondo digitale che nella vita reale, è un’opportunità per crescere e migliorare.
 
 Oggi porto con me questa mentalità in ogni progetto su cui lavoro, con l'obiettivo di creare soluzioni innovative e continuare a crescere, sia come sviluppatore che come persona.`;
 
@@ -36,8 +39,10 @@ const About = () => {
               {aboutText}
             </p>
           </div>
-          <div>
-            <Button className="mt-5">Contattami</Button>
+          <div className="mt-5">
+            <ContactButton className={"font-semibold"}>
+              Contattami
+            </ContactButton>
           </div>
         </div>
       </div>

@@ -1,5 +1,7 @@
 import React from "react";
-import Button from "./Button";
+import Button from "./Buttons/Button";
+import ContactButton from "./Buttons/ContactButton";
+import DownloadButton from "./Buttons/DownloadButton";
 
 const HeroContent = () => {
   return (
@@ -20,8 +22,8 @@ const HeroContent = () => {
         moderne e intuitive.
       </p>
       <div className="flex items-center gap-3 m-4">
-        <Button>Contattami</Button>
-        <Button variant="outline">Download Cv</Button>
+        <ContactButton>Contattami</ContactButton>
+        <DownloadButton>Download Cv</DownloadButton>
       </div>
     </div>
   );

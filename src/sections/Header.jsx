@@ -1,7 +1,7 @@
 import React from "react";
 import { menuItems } from "../constants/index.jsx";
-import Button from "../components/Button.jsx";
-import { BiMenu } from "react-icons/bi";
+import Button from "../components/Buttons/Button.jsx";
+import { HiMenu } from "react-icons/hi";
 import { BiX } from "react-icons/bi";
 import MobileMenu from "../components/MobileMenu.jsx";
 import Logo from "../components/Logo.jsx";
@@ -16,7 +16,7 @@ const Header = ({ menuOpen, setMenuOpen }) => {
         >
           <div className="flex items-center">
             <a href="#hero" aria-label="Home">
-              <Logo className="h-12 w-13 my-1" />
+              <Logo className="h-8 w-14 md:h-12 md:w-full my-1" />
             </a>
           </div>
           <ul className="hidden space-x-4 md:flex">
@@ -30,16 +30,18 @@ const Header = ({ menuOpen, setMenuOpen }) => {
           </ul>
 
           <div className="hidden md:block">
-            <Button variant="outline">Contact Me</Button>
+            <Button variant="white" href="#contact">
+              Contattami
+            </Button>
           </div>
 
           <button
-            className="text-6xl text-white md:hidden"
+            className="text-4xl  mr-2 text-white md:hidden"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle Menu"
             aria-expanded={menuOpen}
           >
-            {menuOpen ? <BiX /> : <BiMenu />}
+            {menuOpen ? <BiX /> : <HiMenu />}
           </button>
         </nav>
       </header>
