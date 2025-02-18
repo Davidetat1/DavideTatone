@@ -108,6 +108,7 @@ Competenze acquisite:`,
 Approfondimento di Java, Spring Boot, Spring Data JPA (Hibernate), Design Pattern (Singleton, Factory), architettura MVC e REST API.
 Gestione di database SQL con MySQL, e Postman per il testing delle API.
 Collaborazione in team tramite GitHub, con progetti pratici di difficoltà crescente.
+
 Competenze acquisite:`,
     years: "2024-2024",
     skills: [
