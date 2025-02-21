@@ -8,7 +8,16 @@ const ContactButton = ({ onClick, closeMenu, ...props }) => {
   };
 
   return (
-    <Button variant="white" href="#contact" onClick={handleClick} {...props}>
+    <Button
+      variant="white"
+      href="#contact"
+      onClick={handleClick}
+      initial={false}
+      variants={{}}
+      whileHover="hover"
+      whileTap="tap"
+      {...props}
+    >
       Contattami
     </Button>
   );

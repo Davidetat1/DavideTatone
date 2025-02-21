@@ -11,7 +11,7 @@ const ProjectCard = ({ project, index }) => {
     >
       {/* Project Content */}
       <div className="flex flex-1 flex-col gap-5">
-        <h2 className="font-poppins text-2xl font-bold text-white/90">
+        <h2 className="font-poppins text-2xl font-bold text-white">
           {project.title}
         </h2>
         <hr className="border-t-2 border-white/40 w-1/2" />

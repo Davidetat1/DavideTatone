@@ -2,17 +2,20 @@ import React from "react";
 import Button from "./Buttons/Button";
 import ContactButton from "./Buttons/ContactButton";
 import DownloadButton from "./Buttons/DownloadButton";
-
-const HeroContent = () => {
+import { motion } from "framer-motion";
+const HeroContent = ({ variants }) => {
   return (
-    <div className="text-left md:max-w-72 lg:max-w-lg">
-      <p className="text-2xl sm:text-2xl lg:text-3xl font-poppins font-bold text-blue-500">
+    <motion.div
+      variants={variants}
+      className="text-left md:max-w-72 lg:max-w-lg"
+    >
+      <p className="text-2xl sm:text-2xl lg:text-4xl font-poppins font-bold tracking-wide text-[#388ae7]">
         Davide Tatone
       </p>
 
       <h2
-        className="mt-1 font-garet font-bold text-4xl sm:text-5xl tracking-wider
-         text-white md:text-4xl lg:text-5xl"
+        className="mt-1 font-garet font-bold text-4xl sm:text-5xl tracking-wide
+         text-white md:text-4xl lg:text-6xl"
       >
         Full Stack Web Developer
       </h2>
@@ -21,11 +24,11 @@ const HeroContent = () => {
         Amo trasformare idee in soluzioni digitali, creando applicazioni web
         moderne e intuitive.
       </p>
-      <div className="flex items-center gap-3 m-4">
+      <div className="mt-6 flex justify-center md:justify-start items-center gap-4">
         <ContactButton>Contattami</ContactButton>
         <DownloadButton>Download Cv</DownloadButton>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

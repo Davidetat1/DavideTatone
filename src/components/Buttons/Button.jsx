@@ -1,4 +1,5 @@
 import { twMerge } from "tailwind-merge";
+import { motion } from "framer-motion";
 
 const Button = ({
   children,
@@ -8,6 +9,20 @@ const Button = ({
   download,
   ...rest
 }) => {
+  const buttonVariants = {
+    hover: {
+      scale: 1.04,
+      transition: {
+        type: "spring",
+        stiffness: "300",
+        damping: 7,
+      },
+    },
+    tap: {
+      scale: 0.9,
+    },
+  };
+
   const variants = {
     primary: "bg-circular-gradient text-white/90 border-1 hover:bg-customBlue",
     white:
@@ -20,21 +35,30 @@ const Button = ({
 
   if (href) {
     return (
-      <a
+      <motion.a
         href={href}
         {...(download ? { download } : {})}
         className={combinedClasses}
         {...rest}
+        variants={buttonVariants}
+        whileHover="hover"
+        whileTap="tap"
       >
         {children}
-      </a>
+      </motion.a>
     );
   }
 
   return (
-    <button className={combinedClasses} {...rest}>
+    <motion.button
+      className={combinedClasses}
+      {...rest}
+      variants={buttonVariants}
+      whileHover="hover"
+      whileTap="tap"
+    >
       {children}
-    </button>
+    </motion.button>
   );
 };
 

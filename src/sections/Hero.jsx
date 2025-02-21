@@ -3,10 +3,59 @@ import HeroContent from "../components/HeroContent";
 import HeroImage from "../components/HeroImage";
 import videoBg from "../assets/videos/VideoBg.mp4";
 import ShapeDividerHero from "../components/shape/shapeBottom/ShapeBottom";
+import { motion } from "framer-motion";
 
 const Hero = ({ menuOpen }) => {
+  const containerVariants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut",
+      },
+    },
+  };
+  const contentVariants = {
+    hidden: {
+      x: -50,
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 1,
+        ease: "easeOut",
+      },
+    },
+  };
+  const imageVariants = {
+    hidden: {
+      y: -50,
+      opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 1,
+        ease: "easeOut",
+        delay: 0.2,
+      },
+    },
+  };
+
   return (
-    <section className="relative overflow-hidden pb-24 md:pb-0" id="hero">
+    <motion.section
+      className="relative overflow-hidden pb-24 md:pb-0"
+      id="hero"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+    >
       {/* Video Background */}
       <video
         autoPlay
@@ -33,13 +82,13 @@ const Hero = ({ menuOpen }) => {
           items-center md:flex-row "
         >
           {/* Hero content */}
-          <HeroContent />
+          <HeroContent variants={contentVariants} />
           {/* Hero Image */}
-          <HeroImage />
+          <HeroImage variants={imageVariants} />
         </div>
       </div>
       <ShapeDividerHero />
-    </section>
+    </motion.section>
   );
 };
 

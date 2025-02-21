@@ -6,7 +6,6 @@ export default {
       fontFamily: {
         garet: ["Garet", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
-        NotoSans: ["Noto-sans", "sans-serif"],
       },
       colors: {
         customBg: "#rgb(59 130 246 / var(--tw-border-opacity, 1));",
