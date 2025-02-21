@@ -18,8 +18,8 @@ const Skills = () => {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 1,
-        delay: index * 0.5,
+        duration: 0.8,
+        delay: index * 0.2,
       },
     }),
   };

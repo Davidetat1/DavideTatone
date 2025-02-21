@@ -24,6 +24,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   .nav-item {
     @apply block rounded-full px-4 py-1.5 text-sm

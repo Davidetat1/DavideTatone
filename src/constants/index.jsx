@@ -3,9 +3,7 @@ import {
   FaEnvelope,
   FaPhoneAlt,
   FaLinkedin,
-  FaMapPin,
   FaMapMarkedAlt,
-  FaDatabase,
 } from "react-icons/fa";
 import { DiDatabase } from "react-icons/di";
 
@@ -43,7 +41,7 @@ Il sito è strutturato in maniera modulare con componenti riutilizzabili, includ
     id: 3,
     title: "App for streaming music: VibesHub",
     image: ProjectVibesHub,
-    description: `Applicazione di streaming musicale sviluppata\n con Java 21 e Spring Boot 3.2.1.
+    description: `Applicazione di streaming musicale sviluppata con Java 21 e Spring Boot 3.2.1.
 Confezionata come jar tramite Maven, l'applicazione segue il pattern MVC, 
 integra MySQL tramite Spring Data JPA per la gestione dei dati e utilizza MiniO per l'object storage. 
 Implementazione di REST API per garantire la gestione delle funzionalità.`,
@@ -81,7 +79,7 @@ export const experiences = [
     location: "Bari, IT",
     website: "https://www.betacom.it",
     description: `Partecipazione al percorso intensivo di 500 ore dell'Academy Betacom, focalizzato sul ciclo di vita del software e sullo sviluppo full stack.
-Il focus principale è stato quello di presentare le varie fasi del ciclo di vita del software e creare progetti in ambito Net Core/ C#, per il lato Back End e in ambito Angular / React per il lato Front End.
+Il focus principale è stato quello di presentare le varie fasi del ciclo di vita del software e creare progetti in ambito Net Core/ C#, per il lato Back End e in ambito Angular / React per il lato Front End, includendo anche l'applicazione di stored procedure e trigger per la gestione dei dati.
 
 Competenze acquisite:`,
     years: "2024-2025",

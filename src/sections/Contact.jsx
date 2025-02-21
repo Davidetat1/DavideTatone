@@ -67,8 +67,8 @@ const Contact = () => {
                   variants={itemVariants}
                   className="text-2xl lg:text-3xl font-semibold text-white mb-5"
                 >
-                  Se hai domande, proposte o vuoi semplicemente fare una
-                  chiacchierata con me, non esitare a contattarmi!
+                  Se hai domande, proposte o vuoi fare una chiacchierata con me,
+                  non esitare a contattarmi!
                 </motion.h3>
                 <motion.ul variants={itemVariants} className="space-y-4">
                   {contactDetails.map((item) => (
@@ -181,7 +181,11 @@ const Contact = () => {
                     <button
                       type="submit"
                       disabled={state.submitting}
-                      className="block w-1/2 mx-auto items-center justify-center px-4 py-2 rounded-md bg-white text-black font-semibold shadow-lg transition-transform duration-300 hover:scale-105 hover:bg-blue-700 hover:text-white disabled:opacity-50"
+                      className="block w-1/2 mx-auto items-center justify-center p-2
+                       rounded-full bg-white text-black font-semibold shadow-xl 
+                       transition-transform duration-300 
+                       hover:scale-105 hover:bg-[#0c1b2b] hover:border-white hover:text-white 
+                       disabled:opacity-50"
                     >
                       {state.submitting ? "Invio in corso" : "Invia"}
                     </button>

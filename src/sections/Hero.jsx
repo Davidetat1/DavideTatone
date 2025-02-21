@@ -2,7 +2,7 @@ import React from "react";
 import HeroContent from "../components/HeroContent";
 import HeroImage from "../components/HeroImage";
 import videoBg from "../assets/videos/VideoBg.mp4";
-import ShapeDividerHero from "../components/shape/shapeBottom/ShapeBottom";
+import ShapeBottom from "../components/shape/shapeBottom/ShapeBottom";
 import { motion } from "framer-motion";
 
 const Hero = ({ menuOpen }) => {
@@ -87,7 +87,7 @@ const Hero = ({ menuOpen }) => {
           <HeroImage variants={imageVariants} />
         </div>
       </div>
-      <ShapeDividerHero />
+      <ShapeBottom />
     </motion.section>
   );
 };
