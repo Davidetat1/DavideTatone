@@ -53,7 +53,7 @@ const Header = ({ menuOpen, setMenuOpen }) => {
   return (
     <>
       <motion.header
-        className="fixed top-0 z-10 w-full px-4 py-4"
+        className="fixed top-0 z-20 w-full px-4 py-4"
         initial="hidden"
         animate="visible"
       >

@@ -7,7 +7,7 @@ const HeroImage = ({ variants }) => {
       variants={variants}
       className="mask-gradient absolute right-0 top-0 h-[63svh] w-full
     overflow-hidden rounded-bl-full rounded-br-full border-r-[10px]
-    border-white/80 bg-[#00478d] md:h-[60dvh] md:w-[450px] lg:h-[67svh]"
+    border-white/80 bg-[#00487a] md:h-[60dvh] md:w-[450px] lg:h-[67svh]"
     >
       <img
         src={HeroPic}

@@ -1,4 +1,4 @@
-import { BiCodeAlt, BiLogoReact, BiData } from "react-icons/bi";
+import { BiCodeAlt, BiLogoReact } from "react-icons/bi";
 import {
   FaEnvelope,
   FaPhoneAlt,
@@ -26,16 +26,17 @@ export const projects = [
     id: 1,
     title: "Web App E-Commerce: Bikeville",
     image: ProjectBikeville,
-    description: `Web App E-commerce con funzionalità come lista prodotti, carrello, autenticazione e criptazione dati.
-Integrazione completa con Front-end sviluppato in Angular(v18.2) & TypeScript, con attività di Styling personalizzato attraverso CSS 
-e Back-end Utilizzando .NET Core, C#,  Entity Framework e SQL server. `,
+    description: `Web App E-commerce con funzionalità avanzate, tra cui gestione dei prodotti, carrello, autenticazione e criptazione dei dati. 
+      Il progetto presenta un'integrazione completa tra il front-end, sviluppato con Angular (v18.2) e TypeScript con styling personalizzato in CSS, 
+      e il back-end, realizzato con .NET Core, C#, Entity Framework e SQL Server. `,
   },
   {
     id: 2,
     title: "Responsive Portfolio Website",
     image: ProjectPortfolio,
-    description: `Portfolio personale realizzato con React.js, che sfrutta Tailwind CSS per offrire un'interfaccia utente moderna, responsive e performante. 
-Il sito è strutturato in maniera modulare con componenti riutilizzabili, include animazioni fluide e un design curato per evidenziare le varie sezioni in modo dinamico e intuitivo.`,
+    description: `Portfolio personale sviluppato con React.js e Tailwind CSS per offrire un'interfaccia moderna, responsive e performante.
+Il sito è strutturato in maniera modulare con componenti riutilizzabili e integra Framer Motion per animazioni fluide e transizioni dinamiche, per evidenziare le varie sezioni in modo intuitivo e interattivo. 
+Il progetto è ospitato su Vercel, garantendo performance ottimali e un deploy rapido`,
   },
   {
     id: 3,
@@ -153,17 +154,10 @@ export const contactDetails = [
   },
 ];
 
-export const words = [
-  "React",
-  "Tailwind",
-  "TypeScript",
-  "JavaScript",
-  "HTML",
-  "CSS",
-  "MongoDB",
-  "GraphQL",
-  "APIs",
-  "Git",
-  "GitHub",
-  "VS Code",
-];
+export const aboutText = `Fin da piccolo ho sempre avuto una curiosità instancabile per la tecnologia. Mi affascinava capire il funzionamento delle cose.
+
+Crescendo, quella curiosità mi ha portato a intraprendere un percorso nel mondo dello sviluppo software, dove ho affinato competenze sia nel back-end che nel front-end, lavorando con diverse tecnologie, linguaggi e framework.
+
+Ma il codice non è tutto ciò che mi rappresenta. Ho imparato il valore della collaborazione e della determinazione non solo attraverso le righe di programmazione, ma anche attraverso lo sport, la mia prima scuola di vita, grazie al quale ho affinato costanza e perseveranza, imparando che ogni sfida, sia nel mondo digitale che nella vita reale, è un’opportunità per crescere e migliorare.
+
+Oggi porto con me questa mentalità in ogni progetto su cui lavoro, con l'obiettivo di creare soluzioni innovative e continuare a crescere, sia come sviluppatore che come persona.`;
