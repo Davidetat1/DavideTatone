@@ -51,7 +51,7 @@ const Hero = ({ menuOpen }) => {
   return (
     <motion.section
       className="relative overflow-hidden pb-24 md:pb-0"
-      id="hero"
+      id="home"
       variants={containerVariants}
       initial="hidden"
       animate="visible"

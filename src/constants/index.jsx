@@ -14,7 +14,7 @@ import LogoBetacom from "../assets/images/LogoBetacom.svg";
 import LogoDevelhope from "../assets/images/LogoDevelhope.svg";
 
 export const menuItems = [
-  { label: "Home", href: "#hero" },
+  { label: "Home", href: "#home" },
   { label: "Chi sono", href: "#about" },
   { label: "Progetti", href: "#projects" },
   { label: "Skills", href: "#skills" },

@@ -68,7 +68,7 @@ const Header = ({ menuOpen, setMenuOpen }) => {
             initial="hidden"
             animate="visible"
           >
-            <a href="#hero" aria-label="Home">
+            <a href="#home" aria-label="Home">
               <Logo className="h-8 w-14 md:h-12 md:w-full my-1" />
             </a>
           </motion.div>
